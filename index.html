@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradient Generator ft. Samed</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <h1 class="title">Gradient Generator</h1>
+        <div class="row gradient-show"></div>
+        <div class="row dir-colors">
+            <div class="directions">
+                <p>Direction</p>
+                <select>
+                    <option value="to top">Top</option>
+                    <option value="to right">Right</option>
+                    <option value="to bottom">Bottom</option>
+                    <option value="to left">Left</option>
+                    <option value="to left top">Left Top</option>
+                    <option value="to right top">Right Top</option>
+                    <option value="to left bottom">Left Bottom</option>
+                    <option value="to right bottom">Right Bottom</option>
+                </select>
+            </div>
+            <div class="color-wrapper">
+                <p>Colors</p>
+                <div class="colors">
+                    <input class="color-input" value="#7B2CBF" type="color">
+                    <input class="color-input" value="#008080" type="color">
+                </div>
+            </div>
+        </div>
+        <textarea class="row" disabled>background: linear-gradient(to left top, #7b2cbf, #9d4edd)</textarea>
+        <div class="row btns">
+            <button class="refresh">Refresh</button>
+            <button class="copy">Copy</button>
+        </div>
+    </div>
+
+
+    <script src="./app.js" defer></script>
+</body>
+
+</html>
